@@ -92,8 +92,6 @@ for i in range(len(df_player_review.index)):
 
 today = datetime.date.today()
 
-#workbook = xlsxwriter.Workbook('Playoff_stats ' + '{:%y-%m-%d}'.format(today) + '.xlsx')
-
 workbook_name = './stats/Playoff_stats ' + '{:%y-%m-%d}'.format(today) + '.xlsx'
 dfSummary = pd.DataFrame([dfPlayoff_games_all[0].median()], index = [player_review[0]])
 dfSeries = pd.DataFrame([dfPlayoff_games_all[0].median()], index = [player_review[0]])
